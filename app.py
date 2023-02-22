@@ -1,11 +1,11 @@
 from pathlib import Path
-
+import os
 import streamlit as st
 from PIL import Image
 
 
 # --- PATH SETTINGS ---
-current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
+current_dir = Path(os.path.abspath(os.path.dirname(__file__))) if "__file__" in locals() else Path.cwd()
 css_file = current_dir /"main.css"
 resume_file = current_dir /"Naveen.pdf"
 profile_pic = current_dir /"Naveen.jpg"
