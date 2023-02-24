@@ -76,7 +76,7 @@ for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
 st.write("\n")
 st.subheader("About Me")
 st.write("---")
-st.write("""Hello 👋 Welcome to my personal website ! As an Electronics and Computer Engineering student at Vellore Institute of Technology, I have built a strong foundation in programming, circuit design, and electronic components. Through my coursework in Linear Integrated Circuit, Microcontroller, Data Analytics and Visualization, and Machine Learning, I have gained a solid theoretical understanding of these concepts.
+st.write("""Greetings and welcome to my esteemed personal website ! As an Electronics and Computer Engineering student at Vellore Institute of Technology, I have built a strong foundation in programming, circuit design, and electronic components. Through my coursework in Linear Integrated Circuit, Microcontroller, Data Analytics and Visualization, and Machine Learning, I have gained a solid theoretical understanding of these concepts.
 
 My passion for data science has led me to pursue practical experience in data analysis, modeling, and visualization. I am constantly seeking opportunities to expand my skillset and contribute to innovative projects.""")
 
