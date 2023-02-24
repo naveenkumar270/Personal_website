@@ -36,7 +36,6 @@ header {visibility: hidden;}
 resume_file = current_dir /"Naveen.pdf"
 profile_pic = current_dir /"Naveen.jpg"
 
-leetcode_emoji = '\U0001F5F3'
 
 
 
@@ -96,3 +95,67 @@ st.write('\n')
 cols = st.columns(len(SOCIAL_MEDIA))
 for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
     cols[index].write(f"[{platform}]({link})")
+    
+  # intro
+st.write("\n")
+st.subheader("About Me")
+st.write("---")
+st.write("""Greetings and welcome to my esteemed personal website ! As an Electronics and Computer Engineering student at Vellore Institute of Technology, I have built a strong foundation in programming, circuit design, and electronic components. Through my coursework in Linear Integrated Circuit, Microcontroller, Data Analytics and Visualization, and Machine Learning, I have gained a solid theoretical understanding of these concepts.
+
+My passion for data science has led me to pursue practical experience in data analysis, modeling, and visualization. I am constantly seeking opportunities to expand my skillset and contribute to innovative projects.""")
+
+st.write('\n')
+
+
+# --- SKILLS ---
+st.write('\n')
+st.subheader("Hard Skills")
+st.write("---")
+st.write(
+    """
+- 👩‍💻 Programming: Python (Pandas,Numpy), C, C++, Java
+- 📊 Data Visulization: MS Excel, Matplotlib, Seaborn, Plotly
+- 👩‍💻 Web application frameworks: Streamlit
+- 🛠️ Tools: Jupyter Nootbook
+"""
+)
+
+
+# --- WORK HISTORY ---
+st.write('\n')
+st.subheader("EXPERIENCE")
+st.write("---")
+
+# --- JOB 1
+st.write("🚧", "**Ashok Leyland LTD., Chennai - Internship**")
+st.write("MAY 2022 - JULY 2022")
+st.write(
+    """
+- ► Worked as an intern where I gained hands-on experience with the latest automotive technologies and learned to analyze vehicle parameters using Python programming
+- ► Worked with a team of engineers to analyze and optimize vehicle performance using Python-based tools such as Jupyter Notebook, NumPy, and Pandas.
+"""
+)
+
+# --- JOB 2
+st.write('\n')
+st.write("🚧", "**RapidRoutes | VIT, Chennai - project**")
+st.write("SEP 2022 - FEB 2023")
+st.write(
+    """
+- ► In this project I Developed a web application using Python, Pandas, and Streamlit to manage transportation, resulting in efficient allocation of buses based on the number of students and exam schedules.
+- ► Utilized data analysis and visualization techniques to optimize transportation management and enhance user experience.
+- ► Implemented Pandas and Streamlit to facilitate data processing and web-based interface, respectively, for seamless data management and analysis.
+"""
+)
+
+# --- JOB 3
+st.write('\n')
+st.write("🚧", "**movie recommendation system | VIT, Chennai - project**")
+st.write("JULY 2022 - DEC 2022")
+st.write(
+    """
+- ► Conducted data analysis and pre-processing on a large dataset of user interactions with movies, including ratings and reviews.
+- ► Developed a recommendation engine using Python programming to provide personalized movie recommendations to users based on their preferences and behavior.
+"""
+)
+
