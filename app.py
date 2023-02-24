@@ -6,36 +6,11 @@ from PIL import Image
 
 # --- PATH SETTINGS ---
 current_dir = Path(os.path.abspath(os.path.dirname(__file__))) if "__file__" in locals() else Path.cwd()
-css_code = '''
-@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
-
-* {font-family: 'Readex Pro';}
-
-a {
-    text-decoration: none;
-    color: white !important;
-    font-weight: 500;
-}
-
-a:hover {
-    color: #d33682 !important;
-    text-decoration: none;
-}
-
-ul {list-style-type: none;}
-
-hr {
-    margin-top: 0px;
-    margin-bottom: 5%;
-}
-
-#MainMenu {visibility: hidden;}
-footer {visibility: hidden;}
-header {visibility: hidden;}
-'''
+css_file = current_dir /"main.css"
 resume_file = current_dir /"Naveen.pdf"
 profile_pic = current_dir /"Naveen.jpg"
 
+leetcode_emoji = '\U0001F5F3'
 
 
 
@@ -66,7 +41,8 @@ st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON)
 
 
 # --- LOAD CSS, PDF & PROFIL PIC ---
-st.markdown(f"<style>{css_code}</style>", unsafe_allow_html=True)
+with open(css_file) as f:
+    st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
 with open(resume_file, "rb") as pdf_file:
     PDFbyte = pdf_file.read()
 profile_pic = Image.open(profile_pic)
@@ -95,8 +71,8 @@ st.write('\n')
 cols = st.columns(len(SOCIAL_MEDIA))
 for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
     cols[index].write(f"[{platform}]({link})")
-    
-  # intro
+
+# intro
 st.write("\n")
 st.subheader("About Me")
 st.write("---")
@@ -158,4 +134,6 @@ st.write(
 - ► Developed a recommendation engine using Python programming to provide personalized movie recommendations to users based on their preferences and behavior.
 """
 )
+
+
 
